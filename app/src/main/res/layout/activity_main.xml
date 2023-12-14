@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="150dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnAgregar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow7"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnCamara"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="161dp"
+        android:text="CAMARA"
+        app:icon="@android:drawable/ic_menu_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFoto" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Codigo:        "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtCodigo"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese Codigo"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="Direccion:        "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtDireccion"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese Su Direccion"
+            android:inputType="text" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:text="Telefono:    "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtTelefono"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese Su Telefono"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow3">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:text="Correo:       "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtCorreo"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese Su Correo"
+            android:inputType="text" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow4">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha Nacimiento: "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtFecha"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingresa tu Fecha De Nacimiento"
+            android:inputType="date" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow5">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:text="Edad:    "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtEdad"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingresa tu Edad"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="402dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow6">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profesion:  "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtProfesion"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingresa tu Profesion"
+            android:inputType="text" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="103dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="72dp"
+        android:text="Agregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
